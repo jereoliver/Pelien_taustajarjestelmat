@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aquKfRiiXhBoIwH6T6v/2pNwmcw4j5CyDj/He6wo11NnpjipeYEH56sJpYxTo+e6DtPETpvMlEB/q/kvSIFyaQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jere\\Desktop\\Koulu\\Taustajärjestelmät\\VSCode_hommat\\assignment_1\\assignment_1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jere\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

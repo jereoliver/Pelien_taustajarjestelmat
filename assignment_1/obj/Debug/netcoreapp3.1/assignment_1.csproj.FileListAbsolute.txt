@@ -1,0 +1,15 @@
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\bin\Debug\netcoreapp3.1\assignment_1.exe
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\bin\Debug\netcoreapp3.1\assignment_1.deps.json
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\bin\Debug\netcoreapp3.1\assignment_1.runtimeconfig.json
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\bin\Debug\netcoreapp3.1\assignment_1.runtimeconfig.dev.json
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\bin\Debug\netcoreapp3.1\assignment_1.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\bin\Debug\netcoreapp3.1\assignment_1.pdb
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\obj\Debug\netcoreapp3.1\assignment_1.csprojAssemblyReference.cache
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\obj\Debug\netcoreapp3.1\assignment_1.AssemblyInfoInputs.cache
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\obj\Debug\netcoreapp3.1\assignment_1.AssemblyInfo.cs
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\obj\Debug\netcoreapp3.1\assignment_1.csproj.CoreCompileInputs.cache
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\obj\Debug\netcoreapp3.1\assignment_1.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\obj\Debug\netcoreapp3.1\assignment_1.pdb
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\obj\Debug\netcoreapp3.1\assignment_1.genruntimeconfig.cache
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\assignment_1\obj\Debug\netcoreapp3.1\assignment_1.csproj.CopyComplete
