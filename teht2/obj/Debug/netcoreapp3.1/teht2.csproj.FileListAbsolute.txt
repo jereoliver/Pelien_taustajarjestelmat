@@ -1,0 +1,13 @@
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\bin\Debug\netcoreapp3.1\teht2.exe
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\bin\Debug\netcoreapp3.1\teht2.deps.json
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\bin\Debug\netcoreapp3.1\teht2.runtimeconfig.json
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\bin\Debug\netcoreapp3.1\teht2.runtimeconfig.dev.json
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\bin\Debug\netcoreapp3.1\teht2.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\bin\Debug\netcoreapp3.1\teht2.pdb
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\obj\Debug\netcoreapp3.1\teht2.csprojAssemblyReference.cache
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\obj\Debug\netcoreapp3.1\teht2.AssemblyInfoInputs.cache
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\obj\Debug\netcoreapp3.1\teht2.AssemblyInfo.cs
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\obj\Debug\netcoreapp3.1\teht2.csproj.CoreCompileInputs.cache
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\obj\Debug\netcoreapp3.1\teht2.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\obj\Debug\netcoreapp3.1\teht2.pdb
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht2\obj\Debug\netcoreapp3.1\teht2.genruntimeconfig.cache

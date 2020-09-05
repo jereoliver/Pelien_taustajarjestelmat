@@ -10,7 +10,7 @@ namespace assignment_1
         {
             ICityBikeDataFetcher dataFetcher = new RealTimeCityBikeDataFetcher();
             int bikes = 5000;
-            String stationName = "Kaivopuisto";
+            String stationName = "Messeniuksenkatu";
 
             try
             {
