@@ -35,6 +35,14 @@ public class FileRepository : IRepository
                 // listOfPlayers.Remove()
             }
         }
+
+        string[] arrayOfStrings = new string[listOfPlayers.Count()];
+        for (int i = 0; i < listOfPlayers.Count(); i++)
+        {
+            arrayOfStrings[i] = JsonConvert.SerializeObject(listOfPlayers[i]);
+        }
+        await File.WriteAllLinesAsync("game-dev.txt", arrayOfStrings);
+
         return playerToDelete;
     }
 
@@ -70,7 +78,6 @@ public class FileRepository : IRepository
             }
 
             string[] arrayOfStrings = new string[listOfPlayers.Count()];
-
             for (int i = 0; i < listOfPlayers.Count(); i++)
             {
                 arrayOfStrings[i] = JsonConvert.SerializeObject(listOfPlayers[i]);
