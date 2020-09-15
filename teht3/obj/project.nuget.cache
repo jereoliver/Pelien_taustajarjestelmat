@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+ZkjSm8koBGrtNj9Bvx2mdphPcU2ZkDLPuO8uIfh99PhCNaOJfz9is2EXF6hRHP0veqaJsYZudTH7i4EvoR6ng==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jere\\Desktop\\Koulu\\Taustajärjestelmät\\VSCode_hommat\\teht3\\teht3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jere\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
