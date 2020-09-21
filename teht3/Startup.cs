@@ -26,6 +26,7 @@ namespace teht3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddSingleton<IRepository, FileRepository>();
         }
 
