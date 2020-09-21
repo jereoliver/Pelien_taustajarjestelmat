@@ -2,89 +2,92 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using System.Linq;
 using System.Collections.Generic;
 
+public class PlayerListHolder
+{
+    public List<Player> listOfPlayers = new List<Player>();
+}
 
 public class FileRepository : IRepository
 {
-    public List<Player> listOfPlayers = new List<Player>();
+
 
     public async Task<Player> Create(Player player)
     {
-        listOfPlayers.Add(player);
-        string[] arrayOfStrings = new string[listOfPlayers.Count()];
-
-        for (int i = 0; i < listOfPlayers.Count(); i++)
-        {
-            arrayOfStrings[i] = JsonConvert.SerializeObject(listOfPlayers[i]);
-        }
-        await File.WriteAllLinesAsync("game-dev.txt", arrayOfStrings);
+        PlayerListHolder players = await ReadFile();
+        players.listOfPlayers.Add(player);
+        File.WriteAllText("game-dev.txt", JsonConvert.SerializeObject(players));
         return player;
     }
 
+
     public async Task<Player> Delete(Guid id)
     {
+        PlayerListHolder players = await ReadFile();
+
         Player playerToDelete = new Player();
-        foreach (Player player in listOfPlayers)
+        for (int i = 0; i < players.listOfPlayers.Count; i++)
         {
-            if (player.Id == id)
+            if (players.listOfPlayers[i].Id == id)
             {
-                playerToDelete = player;
-                // poista kyseinen pelaaja listasta
-                // listOfPlayers.Remove()
+                playerToDelete = players.listOfPlayers[i];
+                players.listOfPlayers.RemoveAt(i);
+                File.WriteAllText("game-dev.txt", JsonConvert.SerializeObject(players));
+                return playerToDelete;
             }
         }
 
-        string[] arrayOfStrings = new string[listOfPlayers.Count()];
-        for (int i = 0; i < listOfPlayers.Count(); i++)
-        {
-            arrayOfStrings[i] = JsonConvert.SerializeObject(listOfPlayers[i]);
-        }
-        await File.WriteAllLinesAsync("game-dev.txt", arrayOfStrings);
-
-        return playerToDelete;
+        return null;
     }
 
     public async Task<Player> Get(Guid id)
     {
+        PlayerListHolder players = await ReadFile();
+
         Player playerToGet = new Player();
-        foreach (Player player in listOfPlayers)
+        foreach (Player player in players.listOfPlayers)
         {
             if (player.Id == id)
             {
                 playerToGet = player;
-
+                return playerToGet;
             }
         }
-        return playerToGet;
+        return null;
     }
 
     public async Task<Player[]> GetAll()
     {
-        return listOfPlayers.ToArray();
+        PlayerListHolder players = await ReadFile();
+        return players.listOfPlayers.ToArray();
     }
 
     public async Task<Player> Modify(Guid id, ModifiedPlayer player)
     {
+        PlayerListHolder players = await ReadFile();
         Player playerToModify = new Player();
-        foreach (Player oldplayer in listOfPlayers)
+        foreach (Player oldplayer in players.listOfPlayers)
         {
             if (oldplayer.Id == id)
             {
-
                 oldplayer.Score = player.Score;
                 playerToModify = oldplayer;
+                File.WriteAllText("game-dev.txt", JsonConvert.SerializeObject(players));
             }
-
-            string[] arrayOfStrings = new string[listOfPlayers.Count()];
-            for (int i = 0; i < listOfPlayers.Count(); i++)
-            {
-                arrayOfStrings[i] = JsonConvert.SerializeObject(listOfPlayers[i]);
-            }
-            await File.WriteAllLinesAsync("game-dev.txt", arrayOfStrings);
         }
         return playerToModify;
+    }
+    public async Task<PlayerListHolder> ReadFile()
+    {
+        var players = new PlayerListHolder();
+        string json = await File.ReadAllTextAsync("game-dev.txt");
+
+        if (File.ReadAllText("game-dev.txt").Length != 0)
+        {
+            return JsonConvert.DeserializeObject<PlayerListHolder>(json);
+        }
+        return players;
     }
 }
 

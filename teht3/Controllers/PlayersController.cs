@@ -21,16 +21,16 @@ namespace teht3.Controllers
         }
 
         [HttpGet]
-        [Route("{playerId}")]
-        public Task<Player> Get(Guid id)
+        [Route("{id:Guid}")]
+        public async Task<Player> Get(Guid id)
         {
-            return _repository.Get(id);
+            return await _repository.Get(id);
         }
 
         [HttpGet]
-        public Task<Player[]> GetAll()
+        public async Task<Player[]> GetAll()
         {
-            return _repository.GetAll();
+            return await _repository.GetAll();
         }
 
         [HttpPost]
@@ -45,16 +45,17 @@ namespace teht3.Controllers
         }
 
         [HttpPost]
-        public Task<Player> Modify(Guid id, [FromBody] ModifiedPlayer player)
+        [Route("modify/{id:Guid}")]
+        public async Task<Player> Modify(Guid id, [FromBody] ModifiedPlayer player)
         {
-            return _repository.Modify(id, player);
+            return await _repository.Modify(id, player);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public Task<Player> Delete(Guid id)
+        public async Task<Player> Delete(Guid id)
         {
-            return _repository.Delete(id);
+            return await _repository.Delete(id);
         }
     }
 }
