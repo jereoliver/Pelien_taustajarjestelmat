@@ -27,22 +27,26 @@ namespace teht3
         {
             services.AddControllers();
 
-            services.AddSingleton<IRepository, FileRepository>();
+            services.AddSingleton<IRepository, MongoDbRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseMyMiddleware();
 
             // app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {

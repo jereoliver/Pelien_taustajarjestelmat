@@ -37,6 +37,7 @@ namespace teht3.Controllers
             Player _player = new Player();
             _player.Id = Guid.NewGuid();
             _player.Name = newplayer.Name;
+            _player.CreationTime = DateTime.UtcNow;
 
             await _repository.Create(_player);
             return _player;

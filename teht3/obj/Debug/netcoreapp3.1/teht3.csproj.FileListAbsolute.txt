@@ -20,3 +20,12 @@ C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\obj\Debug\n
 C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\obj\Debug\netcoreapp3.1\teht3.genruntimeconfig.cache
 C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\obj\Debug\netcoreapp3.1\teht3.csproj.CopyComplete
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+C:\Users\Jere\Desktop\Koulu\Taustajärjestelmät\VSCode_hommat\teht3\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
