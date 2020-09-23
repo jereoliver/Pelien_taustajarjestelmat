@@ -50,7 +50,7 @@ public class MongoDbRepository : IRepository
     {
         var filter = Builders<Player>.Filter.Eq(p => p.Id, playerId);
         Player player = await _playerCollection.Find(filter).FirstAsync();
-        Item itemToRemove = new Item();
+        Item itemToRemove = null;
 
         for (int j = 0; j < player.itemList.Count; j++)
         {
@@ -62,7 +62,7 @@ public class MongoDbRepository : IRepository
                 return itemToRemove;
             }
         }
-        return null;
+        return itemToRemove;
     }
 
 
@@ -74,11 +74,9 @@ public class MongoDbRepository : IRepository
 
     public async Task<Player[]> GetAll()
     {
-        // List<Player> players = await _playerCollection.Find(new BsonDocument()).ToListAsync(); // ei toiminut, valitti guid:sta, kääntääkö mongodb/bson guidit binary-muotoon tms?
-        var listofplayers = _bsonDocumentCollection.ToJson();
-        List<Player> list = JsonConvert.DeserializeObject<List<Player>>(listofplayers);
-
-        return list.ToArray();
+        var filter = Builders<Player>.Filter.Empty;
+        List<Player> players = await _playerCollection.Find(filter).ToListAsync();
+        return players.ToArray();
     }
 
     public async Task<Item[]> GetAllItems(Guid playerId)

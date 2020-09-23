@@ -19,9 +19,9 @@ public class ErrorHandlingMiddleware
             await _next(context);
 
         }
-        catch (Exception e)
+        catch (NotFoundException e)
         {
-            Console.WriteLine("Harmi juttu, Invalid Argument:" + e.Message);
+            Console.WriteLine("Invalid Argument:" + e.Message);
             context.Response.StatusCode = 404;
         }
 

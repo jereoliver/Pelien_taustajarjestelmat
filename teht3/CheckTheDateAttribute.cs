@@ -8,7 +8,7 @@ public class CheckTheDateAttribute : ValidationAttribute
     protected override ValidationResult IsValid(object value, ValidationContext validationContext)
     {
         DateTime datetime = (DateTime)validationContext.ObjectInstance;
-        if (DateTime.Compare(datetime, DateTime.UtcNow) > 0)
+        if (datetime < DateTime.UtcNow)
         {
             return new ValidationResult(GetErrorMessage());
         }
